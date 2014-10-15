@@ -9,14 +9,14 @@ An opinionated kickstarter for [AngularJS](http://angularjs.org) projects.
 Install Node.js and then:
 
 ```sh
-$ git clone https://github.com/jforaker/ngbp-gulp.git
-$ cd ngbp-gulp
+$ git clone https://github.com/ICGustav/angularjs-01.git
+$ cd angularjs-01
 $ npm install
 $ bower install
 $ gulp
 ```
 
-Finally, open `file:///path/to/ng-boilerplate/build/index.html` in your browser.
+Finally, open `file:///path/to/angurlarjs-01/build/index.html` in your browser.
 
 
 For a production build:
