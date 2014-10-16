@@ -21,12 +21,12 @@
     </ul>
     <ul style="padding-left: 0px;">
       <div class="row btn-group" style="width: 100%;"> 
-        <div class="btn btn-default col-md-4"> Nazov </div> 
-        <div class="btn btn-default col-md-2"> Cena </div> 
-        <div class="btn btn-default col-md-5"> Poznámka </div> 
+        <div class="btn btn-default col-md-4" ng-click="predicate = 'name'; reverse=!reverse"> Nazov </div> 
+        <div class="btn btn-default col-md-2" ng-click="predicate = 'cost'; reverse=!reverse"> Cena </div> 
+        <div class="btn btn-default col-md-5" ng-click="predicate = 'note'; reverse=!reverse"> Poznámka </div> 
       </div>
     </ul>
-    <div class="row" ng-repeat="order in orders  | filter:name | orderBy:'name' " style="padding-left: 2%;">
+    <div class="row" ng-repeat="order in orders  | filter:name | orderBy:predicate:reverse " style="padding-left: 2%;">
       <div class="btn btn-info col-md-8" style="width: 90%;"> 
         <div class="col-md-4"> {{order.name}} </div> 
         <div class="col-md-2"> {{order.cost}} </div> 
